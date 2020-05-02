@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire';   
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import {BrowserAnimationsModule} from '@angular/platformbrowser/animations';
 
 import { AppComponent } from './app.component';
 
@@ -12,7 +13,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    ,BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
