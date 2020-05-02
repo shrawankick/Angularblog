@@ -15,10 +15,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    NgMaterialModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    ,BrowserAnimationsModule
-    ,NgMaterialModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
