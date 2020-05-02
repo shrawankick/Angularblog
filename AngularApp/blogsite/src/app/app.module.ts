@@ -12,6 +12,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { RouterModule } from '@angular/router';
 
+import { FormsModule } from  '@angular/forms'; 
+
 @NgModule({
   declarations: [AppComponent, NavBarComponent, HomeComponent],
   imports: [
@@ -24,6 +26,7 @@ import { RouterModule } from '@angular/router';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: '**', component: HomeComponent },
     ]),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
